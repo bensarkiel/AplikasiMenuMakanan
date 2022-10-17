@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailMakanan">
+    tools:context=".DetailMakanan"
+    android:background="#0A192F">
 
     <ImageView
         android:id="@+id/imgDetail"
@@ -26,6 +27,7 @@
         android:layout_marginBottom="250dp"
         android:fontFamily="cursive"
         android:text="Nama Makanan"
+        android:textColor="#A0ABC9"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:layout_marginStart="4dp"
-        android:background="@android:color/darker_gray"
+        android:background="#A0ABC9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgDetail"
@@ -50,6 +52,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Deskripsi"
+        android:textColor="#A0ABC9"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,6 +65,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginBottom="190dp"
         android:text="Harga :"
+        android:textColor="#A0ABC9"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,6 +81,7 @@
         android:layout_marginBottom="190dp"
         android:fontFamily="monospace"
         android:text="Detail Harga"
+        android:textColor="#A0ABC9"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

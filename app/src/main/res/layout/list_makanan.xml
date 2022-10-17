@@ -5,52 +5,70 @@
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="10dp">
-
-
-    <ImageView
-        android:id="@+id/imgFoto"
-        android:layout_width="117dp"
-        android:layout_height="111dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintEnd_toStartOf="@+id/txtNama"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/txtNama"
-        android:layout_width="125dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Nama Kuliner"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtHarga"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgFoto"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtHarga"
-        android:layout_width="wrap_content"
+    android:paddingTop="10dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="monospace"
-        android:text="Harga"
-        android:textStyle="bold"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="35dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtNama"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:cardCornerRadius="10dp"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#233554"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="117dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#A0ABC9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintEnd_toStartOf="@+id/txtNama"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:fontFamily="cursive"
+                android:text="Nama Kuliner"
+                android:textColor="#A0ABC9"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingTop="55dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txtHarga"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imgFoto"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtHarga"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="35dp"
+                android:fontFamily="monospace"
+                android:text="Harga"
+                android:textColor="#A0ABC9"
+                android:textStyle="bold"
+                android:paddingTop="55dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/txtNama"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
